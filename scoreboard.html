@@ -1,99 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cricket Scoreboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cricket Scorecard</title>
   <style>
     body {
-      background-color: #f4f7ff;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .scoreboard {
-      background-color: white;
-      border: 2px solid #2f3df8;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 30px 40px;
-      max-width: 500px;
-      width: 90%;
-    }
-
-    h2 {
-      text-align: center;
-      color: #2f3df8;
-      margin-bottom: 20px;
-    }
-
-    .match-info {
-      margin-bottom: 20px;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    .match-info b {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
       color: #333;
     }
-
+    h1 {
+      text-align: center;
+      color: #006400;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px #ccc;
+      max-width: 600px;
+      margin: 20px auto;
+    }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
+      margin-top: 15px;
     }
-
     th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
+      padding: 10px;
       text-align: center;
+      border-bottom: 1px solid #ddd;
     }
-
     th {
-      background-color: #2f3df8;
-      color: white;
+      background-color: #e6ffe6;
+    }
+    .summary {
+      margin-top: 20px;
+      text-align: center;
       font-weight: bold;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f2f6ff;
-    }
-
-    tr:hover {
-      background-color: #dbe3ff;
+      font-size: 1.2em;
+      color: #007700;
     }
   </style>
 </head>
 <body>
 
-  <div class="scoreboard">
-    <h2>🏏 Cricket Scoreboard</h2>
-    <div class="match-info">
-      <p><b>Match:</b> India vs Australia</p>
-      <p><b>Target:</b> Australia scored 250</p>
-      <p><b>India:</b> 180/2 (Overs: 25.4)</p>
-    </div>
+  <h1>India vs Australia - Match Summary</h1>
 
+  <div class="card">
+    <h2>Batting Scorecard - India</h2>
     <table>
       <tr>
-        <th>Player</th>
+        <th>Batsman</th>
         <th>Runs</th>
-      </tr>
-      <tr>
-        <td>Virat Kohli</td>
-        <td>72</td>
+        <th>Balls</th>
+        <th>4s</th>
+        <th>6s</th>
       </tr>
       <tr>
         <td>Rohit Sharma</td>
-        <td>58</td>
+        <td>72</td>
+        <td>54</td>
+        <td>8</td>
+        <td>2</td>
       </tr>
       <tr>
         <td>Shikhar Dhawan</td>
-        <td>45</td>
+        <td>34</td>
+        <td>27</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Virat Kohli</td>
+        <td>89*</td>
+        <td>63</td>
+        <td>7</td>
+        <td>3</td>
       </tr>
     </table>
+
+    <h2 style="margin-top: 40px;">Bowling Scorecard - Australia</h2>
+    <table>
+      <tr>
+        <th>Bowler</th>
+        <th>Overs</th>
+        <th>Runs</th>
+        <th>Wickets</th>
+      </tr>
+      <tr>
+        <td>Mitchell Starc</td>
+        <td>4</td>
+        <td>38</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Pat Cummins</td>
+        <td>4</td>
+        <td>30</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Adam Zampa</td>
+        <td>4</td>
+        <td>27</td>
+        <td>0</td>
+      </tr>
+    </table>
+
+    <div class="summary">
+      India won by 5 wickets with 2 balls remaining.
+    </div>
   </div>
 
 </body>
