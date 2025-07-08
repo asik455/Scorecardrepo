@@ -3,117 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cricket Scorecard</title>
+  <title>Daily Bulletin - Online Newspaper</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      padding: 20px;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
       text-align: center;
-      color: #006400;
     }
-    .card {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px #ccc;
-      max-width: 600px;
-      margin: 20px auto;
+
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-    th, td {
-      padding: 10px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      background-color: #e6ffe6;
-    }
-    .summary {
-      margin-top: 20px;
-      text-align: center;
+
+    nav a {
+      color: white;
+      text-decoration: none;
       font-weight: bold;
-      font-size: 1.2em;
-      color: #007700;
+      padding: 8px 12px;
+    }
+
+    nav a:hover {
+      background-color: #666;
+      border-radius: 4px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #333;
+      border-bottom: 2px solid #aaa;
+      padding-bottom: 5px;
+    }
+
+    article {
+      background: white;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
-  <h1>India vs Australia - Match Summary</h1>
+  <header>
+    <h1>📰 The Daily Bulletin</h1>
+    <p>Your Trusted Source of News</p>
+  </header>
 
-  <div class="card">
-    <h2>Batting Scorecard - India</h2>
-    <table>
-      <tr>
-        <th>Batsman</th>
-        <th>Runs</th>
-        <th>Balls</th>
-        <th>4s</th>
-        <th>6s</th>
-      </tr>
-      <tr>
-        <td>Rohit Sharma</td>
-        <td>72</td>
-        <td>54</td>
-        <td>8</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>Shikhar Dhawan</td>
-        <td>34</td>
-        <td>27</td>
-        <td>4</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>Virat Kohli</td>
-        <td>89*</td>
-        <td>63</td>
-        <td>7</td>
-        <td>3</td>
-      </tr>
-    </table>
+  <nav>
+    <a href="#politics">Politics</a>
+    <a href="#sports">Sports</a>
+    <a href="#entertainment">Entertainment</a>
+  </nav>
 
-    <h2 style="margin-top: 40px;">Bowling Scorecard - Australia</h2>
-    <table>
-      <tr>
-        <th>Bowler</th>
-        <th>Overs</th>
-        <th>Runs</th>
-        <th>Wickets</th>
-      </tr>
-      <tr>
-        <td>Mitchell Starc</td>
-        <td>4</td>
-        <td>38</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>Pat Cummins</td>
-        <td>4</td>
-        <td>30</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>Adam Zampa</td>
-        <td>4</td>
-        <td>27</td>
-        <td>0</td>
-      </tr>
-    </table>
+  <div class="container">
+    <section class="section" id="politics">
+      <h2>Politics</h2>
+      <article>
+        <h3>New Policy Announced</h3>
+        <p>The government has introduced a new policy that aims to boost rural development and enhance agricultural productivity across the country.</p>
+      </article>
+    </section>
 
-    <div class="summary">
-      India won by 6 wickets with 2 balls remaining.
-    </div>
+    <section class="section" id="sports">
+      <h2>Sports</h2>
+      <article>
+        <h3>India Beats Australia in Final</h3>
+        <p>Virat Kohli and Rohit Sharma led the Indian cricket team to a historic win by 5 wickets in the final match. Full scoreboard available.</p>
+      </article>
+    </section>
+
+    <section class="section" id="entertainment">
+      <h2>Entertainment</h2>
+      <article>
+        <h3>New Movie Breaks Box Office</h3>
+        <p>The latest Bollywood blockbuster has shattered opening weekend records with impressive reviews and audience response.</p>
+      </article>
+    </section>
   </div>
+
+  <footer>
+    &copy; 2025 The Daily Bulletin. All rights reserved.
+  </footer>
 
 </body>
 </html>
